@@ -1,5 +1,6 @@
 $(function() {
   $("#create-note").on('click', makeWord)
+  $("#open-note").on('click', appendToPage)
 })
 
 var wordLetters;
@@ -47,7 +48,7 @@ var appendToPage = function() {
     $("body").append(wordDiv)
     for (var j = 0; j < currentWord.length; j++) {
       var div = $("#word" + i.toString())
-      var image = $("<img>").attr("src", currentWord[j])
+      var image = $("<img>").attr("src", currentWord[j]).css('height', '150px')
       $(div).append(image)
     }
   }
