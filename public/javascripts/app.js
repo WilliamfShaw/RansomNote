@@ -38,6 +38,7 @@ var reassemble = function(data) {
       }
     }
   }
+  appendToPage();
 }
 
 var appendToPage = function() {
